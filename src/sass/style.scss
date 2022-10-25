@@ -1,0 +1,48 @@
+@use "reset";
+
+@font-face {
+    font-family: 'IM Fell English SC';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('IM Fell English SC Regular'), local('IMFellEnglishSC-Regular'), url(../assets/fonts/IMFellEnglishSC-Regular.ttf) format("truetype");
+}
+
+html {
+    background-color: #ff7900;
+}
+
+.container {
+    margin-top: 1rem;
+    width: min(80ch, 100vw - 2rem);
+    margin-inline: auto;
+    color: #3c096c;
+}
+
+h1 {
+    font-family: 'IM Fell English SC', serif;
+}
+
+.gridtemplate {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+picture {
+    border: black solid 2px;
+}
+
+img {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+img[width] {
+    height: 100%;
+}
