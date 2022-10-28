@@ -17,6 +17,7 @@ html {
     width: min(80ch, 100vw - 2rem);
     margin-inline: auto;
     color: #3c096c;
+    margin-bottom: 2rem;
 }
 
 h1 {
@@ -31,6 +32,10 @@ h1 {
     gap: 5px;
     margin-top: 1rem;
     margin-bottom: 2rem;
+
+    @media (max-width: 599px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 picture {
