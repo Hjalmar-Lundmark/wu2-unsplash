@@ -12,4 +12,6 @@ WAVE ger ingen error eller contrast error.
 Jag vet inte hur man validerar med a11ty så jag kan inte göra det nu. 
 
 ## Slutord
-Grid sidan blev bra tyckte jag, den kunde göras utan problem. Landsidan visar info om ett land vilket på den aspekten så fungerar det bra, men det blev inte direkt som jag ville. Jag ville egentligen att det skulle visa ett helt random land eller att man skulle kunna välja, dock efter mycket testande och googling så fick jag det inte att fungera och bara lämnade att visa ett land. Om man går in i nunjucks-filen för den sidan kan man snabbt ändra vilket land som visas genom att ändra numret i `{{ countries[x]. }}`. Navbaren blev lite rushad för jag hade missförstått uppgiften och därför slängde jag ihop navbaren snabbt. 
+Grid sidan blev bra tyckte jag, den kunde göras utan problem. 
+Landsidan visar info om ett land vilket på den aspekten så fungerar det bra, men det blev inte direkt som jag ville. Jag ville egentligen att det skulle visa ett helt random land eller att man skulle kunna välja, dock efter mycket testande och googling så fick jag det inte att fungera och bara lämnade att visa ett land. Om man går in i nunjucks-filen för den sidan kan man snabbt ändra vilket land som visas genom att ändra numret i `{{ countries[x]. }}`. 
+Navbaren blev lite rushad för jag hade missförstått uppgiften och därför slängde jag ihop navbaren snabbt. 
