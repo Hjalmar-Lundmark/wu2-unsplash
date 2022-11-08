@@ -1,5 +1,6 @@
 ---
 layout: base.njk
+title: Grid
 ---
 
 <main class="container">
@@ -9,20 +10,5 @@ layout: base.njk
         {% asyncAll item in unsplash.results %}
             {% image item.urls.small, item.alt_description %}
         {% endall %}
-    </div>
-    <div>
-        <h1>
-            {{ countries[90].name.common }}
-        </h1>
-        <p>
-            {{ countries[90].name.common }}'s capital city is {{ countries[90].capital[0] }} and it's
-            located in {{ countries[90].region }} or {{ countries[90].subregion }}.
-            It currently has a population of {{
-            countries[90].population }} people.
-            {{ countries[90].name.common }}'s timezone is {{ countries[90].timezones[0] }} and its
-            total area covers around {{ countries[90].area }} square kilometers. The country borders {{ countries[90].borders }}. 
-            The week starts on {{ countries[90].startOfWeek }} and you drive on the {{ countries[90].car.side }} of the road. 
-        </p>
-        {% image countries[90].flags.png, countries[90].name.common %}
     </div>
 </main>

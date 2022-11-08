@@ -13,11 +13,9 @@ html {
 }
 
 .container {
-    margin-top: 1rem;
     width: min(80ch, 100vw - 2rem);
     margin-inline: auto;
     color: #3c096c;
-    margin-bottom: 2rem;
 }
 
 h1 {
@@ -50,4 +48,44 @@ img {
 
 img[width] {
     height: 100%;
+}
+
+nav{
+    background-color: lime;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    &__collapse { 
+        > ul { 
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        }
+
+        &--show {
+            display: block;
+            width: 100%;
+
+            > ul {
+                flex-direction: column;
+                padding: 0;
+            }
+        }
+    }
+}
+
+main {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+a{
+    text-decoration: none;
 }
