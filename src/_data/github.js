@@ -9,6 +9,7 @@ module.exports = async function() {
     let url = `https://api.github.com/users/${githubUser}`;
     
     This code above is not letting me connect to netlify
+    When I copied 'let url' and changed the githubUser to hardcoded it worked
     */
    
     let url = `https://api.github.com/users/Hjalmar-Lundmark`;
