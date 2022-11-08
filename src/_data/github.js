@@ -11,6 +11,9 @@ module.exports = async function() {
     This code above is not letting me connect to netlify
     */
    
+    let url = `https://api.github.com/users/Hjalmar-Lundmark`;
+
+
     /* This returns a promise */
     return EleventyFetch(url, {
         duration: "1d", // save for 1 day
