@@ -3,9 +3,9 @@ require('dotenv').config();
 
 module.exports = async function() {
     const githubUser = process.env.GITHUB_USER;
-    if (!githubUser) {
-        throw new Error('Please set a GITHUB_USER environment variable');
-    }
+    //if (!githubUser) {
+    //    throw new Error('Please set a GITHUB_USER environment variable');
+    //}
     let url = `https://api.github.com/users/${githubUser}`;
 
     /* This returns a promise */

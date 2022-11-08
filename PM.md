@@ -1,6 +1,6 @@
 # PM - Gridlayout och API
 ## Introduktion
-
+Min hemsida är ett grid av halloween bilder och en sida med information om ett land. 
 
 ## Validationer
 HTML valideringen på [validator.nu](validator.nu) gav error i varje source-tag bredvid bilderna för att jag inte hade rätt typ av storlek i srcset. De bildtagarna skapas av 11ty så jag vet inte hur det ska fixas, plus så sätts bildstorlekarna av CSS så jag tycker inte att det här är ett stort problem. Validatorn ger ingen annan varning eller error. 
