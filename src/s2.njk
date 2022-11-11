@@ -4,22 +4,64 @@ title: Land
 ---
 
 {{ rndm }}
-{% set rndm = [1,2,3,4,5,6,7,8,9] | random %}  
+{% set rndm = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249] | random %}  
 
+{{ rndm2 }}
+{% set rndm2 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249] | random %}  
+
+{{ rndm3 }}
+{% set rndm3 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249] | random %}
+ 
 <main class="container">
-    <div>
+    <div class="landtab">
         <h1>
             {{ countries[rndm].name.common }}
         </h1>
         <p>
             {{ countries[rndm].name.common }}'s capital city is {{ countries[rndm].capital[0] }} and it's
             located in {{ countries[rndm].region }} or {{ countries[rndm].subregion }}.
-            It currently has a population of {{
-            countries[rndm].population }} people.
+            It currently has a population of {{ countries[rndm].population }} people.
             {{ countries[rndm].name.common }}'s timezone is {{ countries[rndm].timezones[0] }} and its
             total area covers around {{ countries[rndm].area }} square kilometers. The country borders {{ countries[rndm].borders }}. 
             The week starts on {{ countries[rndm].startOfWeek }} and you drive on the {{ countries[rndm].car.side }} side of the road. 
+            It is {{ countries[rndm].unMember }} that {{ countries[rndm].name.common }} are in the UN. 
+            It is {{ countries[rndm].landlocked }} that {{ countries[rndm].name.common }} is landlocked. 
+
         </p>
         {% image countries[rndm].flags.png, countries[rndm].name.common %}
+    </div>
+    <div class="landtab">
+        <h1>
+            {{ countries[rndm2].name.common }}
+        </h1>
+        <p>
+            {{ countries[rndm2].name.common }}'s capital city is {{ countries[rndm2].capital[0] }} and it's
+            located in {{ countries[rndm2].region }} or {{ countries[rndm2].subregion }}.
+            It currently has a population of {{ countries[rndm2].population }} people.
+            {{ countries[rndm2].name.common }}'s timezone is {{ countries[rndm2].timezones[0] }} and its
+            total area covers around {{ countries[rndm2].area }} square kilometers. The country borders {{ countries[rndm2].borders }}. 
+            The week starts on {{ countries[rndm2].startOfWeek }} and you drive on the {{ countries[rndm2].car.side }} side of the road. 
+            It is {{ countries[rndm2].unMember }} that {{ countries[rndm2].name.common }} are in the UN. 
+            It is {{ countries[rndm2].landlocked }} that {{ countries[rndm2].name.common }} is landlocked. 
+
+        </p>
+        {% image countries[rndm2].flags.png, countries[rndm2].name.common %}
+    </div>
+    <div class="landtab">
+        <h1>
+            {{ countries[rndm3].name.common }}
+        </h1>
+        <p>
+            {{ countries[rndm3].name.common }}'s capital city is {{ countries[rndm3].capital[0] }} and it's
+            located in {{ countries[rndm3].region }} or {{ countries[rndm3].subregion }}.
+            It currently has a population of {{ countries[rndm3].population }} people.
+            {{ countries[rndm3].name.common }}'s timezone is {{ countries[rndm3].timezones[0] }} and its
+            total area covers around {{ countries[rndm3].area }} square kilometers. The country borders {{ countries[rndm3].borders }}. 
+            The week starts on {{ countries[rndm3].startOfWeek }} and you drive on the {{ countries[rndm3].car.side }} side of the road. 
+            It is {{ countries[rndm3].unMember }} that {{ countries[rndm3].name.common }} are in the UN. 
+            It is {{ countries[rndm3].landlocked }} that {{ countries[rndm3].name.common }} is landlocked. 
+
+        </p>
+        {% image countries[rndm3].flags.png, countries[rndm3].name.common %}
     </div>
 </main>
